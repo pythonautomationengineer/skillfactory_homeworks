@@ -5,10 +5,7 @@ def main():
     deposit = [int(percent_list[0] * sum_sum / 100), int(percent_list[1] * sum_sum / 100),
                int(percent_list[2] * sum_sum / 100), int(percent_list[3] * sum_sum / 100)]
     print(f'Размеры депозитов при заданной сумме: {deposit}')
-    max_deposit(deposit)  # передадим депозиты в банках в функцию max_deposit
 
-
-def max_deposit(deposit):
     deposit_max = deposit.index(max(deposit))  # получим индекс максимального значения депозита
     print(f'Максимальная сумма, которую вы можете заработать — {deposit[deposit_max]}')
 
