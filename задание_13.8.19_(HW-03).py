@@ -10,7 +10,7 @@ def main():
     total_25_and_more = 0
 
     for i in range(tickets):
-        a = int(input("Введите возраст участника: "))
+        a = int(input("Введите возраст посетителя: "))
 
         if 17 < a < 25:
             age_18_25.append(a)
